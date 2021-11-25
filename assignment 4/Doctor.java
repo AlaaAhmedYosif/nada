@@ -1,14 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package factorymethod;
 
-/**
- *
- * @author الاء
- */
-public class Doctor {
-    
+
+public abstract class Doctor implements Staff 
+{
+     @Override
+     public double getSalary()
+    {
+        return  8000;
+    }
+     @Override
+    public int getYearsOfWork()
+    {
+        return 5;
+    }
 }
